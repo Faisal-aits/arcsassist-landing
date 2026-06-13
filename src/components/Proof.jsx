@@ -11,7 +11,7 @@ export const Proof = () => (
       <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 mb-16 md:mb-20">
         <div className="md:col-span-7">
           <div className="flex items-center gap-3 mb-6">
-            <span className="eyebrow text-navy/60">why arcs</span>
+            <span className="eyebrow text-navy/60">why <span className="lowercase">arcs</span></span>
           </div>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl tracking-[-0.015em] leading-[1.08] text-navy">
             The difference between <span className="pull-word">found</span> and{" "}

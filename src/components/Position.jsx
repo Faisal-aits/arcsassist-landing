@@ -37,7 +37,7 @@ export const Position = () => (
       </motion.p>
 
       <div className="mt-16 md:mt-20 pt-6 border-t border-rule flex flex-wrap items-center justify-between gap-4 text-[11px] tracking-[0.2em] uppercase text-ink/50">
-        <span>issued by arcs editorial</span>
+        <span>issued by <span className="lowercase">arcs</span> editorial</span>
         <span className="font-display italic normal-case tracking-normal text-ink/60">
           Maharashtra · India
         </span>

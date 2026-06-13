@@ -46,8 +46,8 @@ export const Employers = () => (
       >
         <div className="border-b border-ink/10 pb-4 mb-6">
           <div className="flex items-center justify-between text-[10px] tracking-[0.25em] uppercase text-ink/40">
-            <span className="font-display italic text-gold not-italic-tracking">§ commercials</span>
-            <span>arcs · 2026</span>
+            <span className="font-display italic text-gold not-italic-tracking">commercials</span>
+            <span className="lowercase">arcs · 2026</span>
           </div>
         </div>
         <ul className="space-y-6">

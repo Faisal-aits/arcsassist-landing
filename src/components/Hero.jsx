@@ -152,7 +152,7 @@ export const Hero = () => (
     </div>
 
     <div className="bg-ivory border-b border-rule">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex flex-wrap items-center justify-between gap-3 text-[11px] tracking-[0.2em] uppercase text-ink/50">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex flex-wrap items-center justify-between gap-3 text-[11px] tracking-[0.2em] text-ink/50">
         <span>arcsassist.in</span>
         <span className="hidden md:inline">an AR group company</span>
         <span>rooted in maharashtra · 2026</span>

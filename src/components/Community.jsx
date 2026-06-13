@@ -13,7 +13,7 @@ export const Community = () => (
     <div className="max-w-5xl mx-auto px-6 md:px-12 text-center">
       <div className="flex items-center justify-center gap-3 mb-6">
         <span className="h-px w-12 bg-ivory/25" />
-        <span className="eyebrow text-ivory/60">the arcs job assist community</span>
+        <span className="eyebrow text-ivory/60">the <span className="lowercase">arcs</span> job assist community</span>
         <span className="h-px w-12 bg-ivory/25" />
       </div>
       <motion.h2
