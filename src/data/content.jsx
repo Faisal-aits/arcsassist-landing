@@ -12,20 +12,20 @@ export const WA_COMMUNITY = "https://wa.me/919272402828?text=Hello%20arcs%21%20I
 export const WA_CHANNEL = "https://whatsapp.com/channel/0029Vb7rNsoF1YlYlkCVAy2Q";
 export const EMAIL_HELLO = "mailto:hello@arcsassist.in";
 export const EMAIL_PARTNERS = "mailto:partners@arcsassist.in";
-export const LINKEDIN = "https://linkedin.com/company/arcsassist";
-export const INSTAGRAM = "https://instagram.com/arcsassist";
+export const LINKEDIN = "https://www.linkedin.com/company/arcsassist/";
+export const INSTAGRAM = "https://www.instagram.com/arcs.assist?igsh=YjJucnhwZmtlbGJ1";
 
 export const HERO = {
   candidates: {
     eyebrow: "for candidates",
-    headline: ["find", "roles", "that matter"],
-    sub: "we help you get noticed by companies that value your skills, not just your location.",
+    headline: ["Find", "roles", "that matter"],
+    sub: "we help freshers and early-career professionals fix the resume, prepare for the call, and walk into the offer with leverage they did not have before.",
     cta: "join candidate pool",
     href: WA_CANDIDATE,
   },
   employers: {
     eyebrow: "for employers",
-    headline: ["hire", "talent", "that delivers"],
+    headline: ["The right", "talent", "is one conversation away"],
     sub: "vetted, coached, and ready to contribute from day one. no more endless screening.",
     cta: "hire through arcs",
     href: WA_EMPLOYER,
@@ -74,7 +74,7 @@ export const PROOF = [
 ];
 
 export const FACTS = [
-  { k: "placement fee", v: "8.33% of CTC" },
+  { k: "placement fee", v: "paid on hire" },
   { k: "replacement", v: "90-day guarantee" },
   { k: "turnaround", v: "48-72 hours" },
   { k: "industry focus", v: "Tech, Ops & Sales" },

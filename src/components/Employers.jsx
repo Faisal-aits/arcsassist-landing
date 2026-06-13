@@ -11,8 +11,6 @@ export const Employers = () => (
     <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 relative z-10">
       <div className="lg:col-span-7">
         <div className="flex items-center gap-3 mb-8">
-          <span className="font-display italic text-gold text-sm">V</span>
-          <span className="h-px w-12 bg-ink/20" />
           <span className="eyebrow text-ink/55">for employers</span>
         </div>
         <motion.h2
@@ -22,7 +20,7 @@ export const Employers = () => (
           transition={{ duration: 0.8 }}
           className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[-0.015em] leading-[1.05] text-ink"
         >
-          you are tired of <span className="pull-word">metro agency</span> rates. we are tired of{" "}
+          You are tired of <span className="pull-word">metro agency</span> rates. We are tired of{" "}
           <span className="pull-word">metro agency</span> output.
         </motion.h2>
         <p className="mt-10 text-[17px] md:text-lg text-ink/70 leading-relaxed max-w-2xl">

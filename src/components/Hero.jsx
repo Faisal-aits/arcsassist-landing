@@ -30,8 +30,10 @@ const Side = ({ data, theme, testidPrefix, index }) => {
       initial="hidden"
       animate="show"
       variants={fadeUp}
-      className={`relative flex flex-col justify-between px-6 sm:px-10 md:px-12 lg:px-20 py-16 md:py-24 lg:py-32 min-h-[70vh] md:min-h-[92vh] ${
-        dark ? "bg-navy text-ivory" : "bg-ivory text-ink"
+      className={`relative flex flex-col justify-between py-16 md:py-24 lg:py-32 min-h-[70vh] md:min-h-[92vh] ${
+        dark
+          ? "px-6 sm:px-10 md:pl-24 lg:pl-32 md:pr-12 lg:pr-20 bg-navy text-ivory"
+          : "px-6 sm:px-10 md:px-12 lg:px-20 bg-ivory text-ink"
       }`}
       data-testid={`${testidPrefix}-side`}
     >
@@ -41,8 +43,6 @@ const Side = ({ data, theme, testidPrefix, index }) => {
           custom={0}
           className={`flex items-center gap-3 ${dark ? "text-ivory/55" : "text-ink/55"}`}
         >
-          <span className="font-display italic text-sm">{index}</span>
-          <span className={`h-px w-8 ${dark ? "bg-ivory/25" : "bg-ink/20"}`} />
           <span className="eyebrow">{data.eyebrow}</span>
         </motion.div>
       </div>
@@ -114,10 +114,11 @@ export const Hero = () => (
 
       <div
         aria-hidden
-        className="hidden md:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 items-center justify-center pointer-events-none"
+        className="hidden md:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-10 items-center justify-center pointer-events-none"
       >
-        <div className="bg-gold text-navy font-display text-[11px] tracking-[0.25em] uppercase px-4 py-2 rounded-full whitespace-nowrap shadow-[0_0_0_6px_rgba(247,245,240,0.4)]">
-          assist, right.
+        <div className="flex overflow-hidden rounded-full border-2 border-gold shadow-[0_0_0_5px_rgba(197,163,88,0.25)] whitespace-nowrap font-display text-[11px] tracking-[0.25em] uppercase">
+          <span className="bg-navy text-ivory px-5 py-2">assist</span>
+          <span className="bg-ivory text-navy px-5 py-2">right</span>
         </div>
       </div>
     </div>

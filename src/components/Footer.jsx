@@ -13,8 +13,6 @@ import {
 const Col = ({ title, index, items }) => (
   <div>
     <div className="flex items-center gap-2 mb-5">
-      <span className="font-display italic text-gold text-xs">{index}</span>
-      <span className="h-px w-6 bg-ivory/25" />
       <span className="eyebrow text-ivory/55">{title}</span>
     </div>
     <ul className="space-y-3">
@@ -51,7 +49,7 @@ export const Footer = () => (
     <div className="max-w-7xl mx-auto px-6 md:px-12">
       <div className="mb-20 md:mb-24 grid grid-cols-1 md:grid-cols-12 gap-8 pb-16 md:pb-20 border-b border-ivory/15">
         <h3 className="md:col-span-7 font-display text-2xl md:text-4xl lg:text-[2.75rem] leading-[1.1] tracking-[-0.015em]">
-          ready when you are. <span className="pull-word">no forms.</span>
+          Ready when you are. <span className="pull-word">No forms.</span>
         </h3>
         <div className="md:col-span-5 flex flex-col sm:flex-row md:justify-end items-start sm:items-center gap-4">
           <a
@@ -81,9 +79,9 @@ export const Footer = () => (
             href="#top"
             className="font-display text-4xl md:text-5xl tracking-tight leading-none inline-block"
           >
-            arcs<span className="text-gold">.</span>
+            arcs
           </a>
-          <p className="mt-3 font-display italic text-ivory/65 text-lg">assist, right.</p>
+          <p className="mt-3 font-display italic text-ivory/65 text-lg">assist right</p>
           <p className="mt-6 text-[15px] text-ivory/65 leading-relaxed max-w-sm">
             a recruitment consultancy built for the india that talent maps still scroll past.
           </p>
@@ -109,14 +107,14 @@ export const Footer = () => (
             items={[
               { label: "hire through arcs", href: "#employers", testid: "hire" },
               { label: "whatsapp partners", href: WA_EMPLOYER, external: true, testid: "wa-partners" },
-              { label: "partners@arcsassist.in", href: EMAIL_PARTNERS, testid: "email-partners" },
+              { label: "arcsassist@gmail.com", href: "mailto:arcsassist@gmail.com", testid: "email-hello" }            
             ]}
           />
           <Col
             title="contact"
             index="iii"
             items={[
-              { label: "hello@arcsassist.in", href: EMAIL_HELLO, testid: "email-hello" },
+              { label: "arcsassist@gmail.com", href: "mailto:arcsassist@gmail.com", testid: "email-hello" },
               { label: "whatsapp channel", href: WA_CHANNEL, external: true, testid: "wa-channel" },
               { label: "linkedin", href: LINKEDIN, external: true, testid: "linkedin" },
               { label: "instagram", href: INSTAGRAM, external: true, testid: "instagram" },
@@ -125,10 +123,10 @@ export const Footer = () => (
         </div>
       </div>
 
-      <div className="mt-20 pt-6 border-t border-ivory/15 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-[11px] tracking-[0.2em] uppercase text-ivory/45">
+      <div className="mt-20 pt-6 border-t border-ivory/15 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-[11px] tracking-[0.2em]  text-ivory/45">
         <span>© 2026 arcs · arcsassist.in</span>
         <span className="font-display italic normal-case tracking-normal text-ivory/55 text-sm">
-          built quietly. on purpose.
+          Built quietly. On purpose.
         </span>
       </div>
     </div>

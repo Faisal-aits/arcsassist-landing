@@ -11,12 +11,10 @@ export const HowItWorks = () => (
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 md:mb-24">
         <div>
           <div className="flex items-center gap-3 mb-6">
-            <span className="font-display italic text-gold text-sm">III</span>
-            <span className="h-px w-12 bg-ink/20" />
             <span className="eyebrow text-ink/55">how it works</span>
           </div>
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl tracking-[-0.015em] leading-[1.08] text-ink max-w-xl">
-            three steps. <span className="pull-word">no theatre.</span>
+            Three steps. <span className="pull-word">No theatre.</span>
           </h2>
         </div>
         <p className="text-sm text-ink/55 max-w-xs md:text-right leading-relaxed">
@@ -40,9 +38,6 @@ export const HowItWorks = () => (
           >
             <div className="flex items-baseline justify-between mb-6 md:mb-8">
               <span className="font-display text-gold text-3xl md:text-4xl">{s.n}</span>
-              <span className="text-[10px] tracking-[0.22em] uppercase text-ink/40">
-                step {parseInt(s.n)} of 3
-              </span>
             </div>
             <h3 className="font-display text-xl md:text-[26px] text-ink leading-snug tracking-[-0.01em]">
               {s.title}

@@ -8,8 +8,6 @@ export const HonestNote = () => (
   >
     <div className="max-w-4xl mx-auto px-6 md:px-12 relative z-10">
       <div className="flex items-center gap-3 mb-8">
-        <span className="font-display italic text-gold text-sm">VII</span>
-        <span className="h-px w-12 bg-ink/20" />
         <span className="eyebrow text-ink/55">an honest note</span>
       </div>
       <motion.h2
@@ -19,7 +17,7 @@ export const HonestNote = () => (
         transition={{ duration: 0.8 }}
         className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[-0.015em] leading-[1.08] text-ink"
       >
-        a note on what we <span className="pull-word">don&apos;t</span> do.
+        A note on what we <span className="pull-word">don&apos;t</span> do.
       </motion.h2>
       <p className="mt-8 md:mt-12 text-[17px] md:text-lg text-ink/70 leading-relaxed max-w-2xl">
         arcs is built for jobs. we are not, right now, a career guidance service, an overseas

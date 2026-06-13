@@ -30,7 +30,7 @@ export const Navbar = () => {
           className="flex items-baseline gap-2 font-display text-2xl md:text-[26px] tracking-tight text-ink leading-none"
           aria-label="arcs — home"
         >
-          <span>arcs<span className="text-gold">.</span></span>
+          <span>arcs</span>
         </a>
 
         <ul className="hidden md:flex items-center gap-8 lg:gap-10">

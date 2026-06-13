@@ -14,8 +14,6 @@ export const Position = () => (
         transition={{ duration: 0.6 }}
         className="flex items-center gap-3 mb-8"
       >
-        <span className="font-display italic text-gold text-sm">II</span>
-        <span className="h-px w-12 bg-ink/20" />
         <span className="eyebrow text-ink/55">our position</span>
       </motion.div>
       <motion.h2
@@ -25,7 +23,7 @@ export const Position = () => (
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.08] tracking-[-0.015em] text-ink max-w-4xl"
       >
-        ambition is everywhere. <span className="pull-word">guidance is not.</span>
+        Ambition is everywhere. <span className="pull-word">Guidance is not.</span>
       </motion.h2>
       <motion.p
         initial={{ opacity: 0, y: 18 }}
@@ -39,9 +37,9 @@ export const Position = () => (
       </motion.p>
 
       <div className="mt-16 md:mt-20 pt-6 border-t border-rule flex flex-wrap items-center justify-between gap-4 text-[11px] tracking-[0.2em] uppercase text-ink/50">
-        <span>— issued by arcs editorial</span>
+        <span>issued by arcs editorial</span>
         <span className="font-display italic normal-case tracking-normal text-ink/60">
-          maharashtra · india
+          Maharashtra · India
         </span>
       </div>
     </div>

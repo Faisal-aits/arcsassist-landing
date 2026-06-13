@@ -8,7 +8,6 @@ export const Community = () => (
     data-testid="community-section"
     className="relative bg-navy text-ivory py-24 md:py-36 overflow-hidden grain"
   >
-    <span aria-hidden className="absolute top-6 left-6 text-ivory/30 font-display italic text-xs">[ §vi ]</span>
     <span aria-hidden className="absolute top-6 right-6 text-ivory/30 font-display italic text-xs">arcs · 2026</span>
 
     <div className="max-w-5xl mx-auto px-6 md:px-12 text-center">
@@ -24,7 +23,7 @@ export const Community = () => (
         transition={{ duration: 0.8 }}
         className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.08] tracking-[-0.015em]"
       >
-        one whatsapp group. <span className="pull-word">real roles.</span> real coaching.
+        One whatsapp group. <span className="pull-word">Real roles.</span> Real coaching.
       </motion.h2>
       <p className="mt-8 max-w-2xl mx-auto text-base md:text-[17px] text-ivory/72 leading-relaxed">
         join 100+ candidates being actively matched to openings. no spam. no group floods. just the
