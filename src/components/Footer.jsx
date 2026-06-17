@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import {
   WA_CANDIDATE,
   WA_EMPLOYER,
@@ -48,85 +49,86 @@ export const Footer = () => (
 
     <div className="max-w-7xl mx-auto px-6 md:px-12">
       <div className="mb-20 md:mb-24 grid grid-cols-1 md:grid-cols-12 gap-8 pb-16 md:pb-20 border-b border-ivory/15">
-        <h3 className="md:col-span-7 font-display text-2xl md:text-4xl lg:text-[2.75rem] leading-[1.1] tracking-[-0.015em]">
+        <h3 className="md:col-span-7 font-sans normal-case text-2xl md:text-4xl lg:text-[2.75rem] leading-[1.1] tracking-[-0.015em]">
           Ready when you are. <span className="pull-word">No forms.</span>
         </h3>
         <div className="md:col-span-5 flex flex-col sm:flex-row md:justify-end items-start sm:items-center gap-4">
           <a
-            data-testid="footer-cta-candidate"
-            href={WA_CANDIDATE}
-            target="_blank"
-            rel="noopener noreferrer"
+            data-testid="footer-cta-contact"
+            href={EMAIL_HELLO}
             className="group inline-flex items-center gap-3 px-5 py-3 border border-ivory/30 text-[13px] tracking-[0.06em] hover:bg-ivory hover:text-navy transition-all"
           >
-            candidate <ArrowUpRight size={14} strokeWidth={1.5} className="text-gold" />
-          </a>
-          <a
-            data-testid="footer-cta-employer"
-            href={WA_EMPLOYER}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group inline-flex items-center gap-3 px-5 py-3 bg-ivory text-navy text-[13px] tracking-[0.06em] border border-ivory hover:bg-transparent hover:text-ivory transition-all"
-          >
-            employer <ArrowUpRight size={14} strokeWidth={1.5} className="text-gold" />
+            contact us <ArrowUpRight size={14} strokeWidth={1.5} className="text-gold group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </a>
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
         <div className="md:col-span-5">
-          <a
-            href="#top"
-            className="font-display text-4xl md:text-5xl tracking-tight leading-none inline-block"
-          >
-            arcs
-          </a>
-          <p className="mt-3 font-display italic text-ivory/65 text-lg">assist right</p>
+          <div className="flex items-end gap-5 relative right-[70px]">
+            <a
+              href="#top"
+              className="flex items-center leading-none inline-block"
+              aria-label="arcs — home"
+            >
+              <img
+                src="/arcs-tb.png"
+                alt="arcs"
+                className="h-14 md:h-20 w-auto object-contain scale-[1.7] origin-left invert"
+                style={{ mixBlendMode: "screen" }}
+              />
+            </a>
+            <p className="font-display italic text-ivory/65 text-xl pb-2">assist right</p>
+          </div>
           <p className="mt-6 text-[15px] text-ivory/65 leading-relaxed max-w-sm">
-            a recruitment consultancy built for the india that talent maps still scroll past.
+            A recruitment consultancy built for the india that talent maps still scroll past.
           </p>
           <div className="mt-8 inline-flex items-center gap-3 px-4 py-2 border border-ivory/20 text-[10px] tracking-[0.22em] uppercase text-ivory/60">
             <span className="h-1.5 w-1.5 rounded-full bg-gold" />
-            an AR group company · maharashtra
+            maharashtra
           </div>
         </div>
 
-        <div className="md:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-10">
-          <Col
-            title="candidates"
-            index="i"
-            items={[
-              { label: "join the community", href: WA_COMMUNITY, external: true, testid: "wa-community" },
-              { label: "how it works", href: "#how", testid: "how" },
-              { label: "whatsapp us", href: WA_CANDIDATE, external: true, testid: "wa-us" },
-            ]}
-          />
-          <Col
-            title="employers"
-            index="ii"
-            items={[
-              { label: "hire through arcs", href: "#employers", testid: "hire" },
-              { label: "whatsapp partners", href: WA_EMPLOYER, external: true, testid: "wa-partners" },
-              { label: "arcsassist@gmail.com", href: "mailto:arcsassist@gmail.com", testid: "email-hello" }            
-            ]}
-          />
-          <Col
-            title="contact"
-            index="iii"
-            items={[
-              { label: "arcsassist@gmail.com", href: "mailto:arcsassist@gmail.com", testid: "email-hello" },
-              { label: "whatsapp channel", href: WA_CHANNEL, external: true, testid: "wa-channel" },
-              { label: "linkedin", href: LINKEDIN, external: true, testid: "linkedin" },
-              { label: "instagram", href: INSTAGRAM, external: true, testid: "instagram" },
-            ]}
-          />
+        <div className="md:col-span-7 flex flex-col md:items-end">
+          <ul className="space-y-4 text-right">
+            <li>
+              <a href={EMAIL_HELLO} className="group inline-flex items-center gap-2 text-[15px] text-ivory/85 hover:text-gold transition-colors">
+                Contact us
+                <ArrowUpRight size={13} strokeWidth={1.5} className="text-gold group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </a>
+            </li>
+            <li>
+              <a href={WA_COMMUNITY} target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2 text-[15px] text-ivory/85 hover:text-gold transition-colors">
+                Join the community
+                <ArrowUpRight size={13} strokeWidth={1.5} className="text-gold group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </a>
+            </li>
+            <li>
+              <span className="inline-flex items-center gap-2 text-[15px] text-ivory/85">
+                office @ arcsassist
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
 
       <div className="mt-20 pt-6 border-t border-ivory/15 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-[11px] tracking-[0.2em]  text-ivory/45">
-        <span>© 2026 arcs · arcsassist.in</span>
-        <span className="font-display italic normal-case tracking-normal text-ivory/55 text-sm">
-          Built quietly. On purpose.
+        <div className="flex items-center gap-4">
+          <span>© 2026 arcs · arcsassist.in</span>
+          <div className="flex items-center gap-3">
+            <a href={INSTAGRAM} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors" aria-label="Instagram">
+              <FaInstagram size={16} />
+            </a>
+            <a href={LINKEDIN} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors" aria-label="LinkedIn">
+              <FaLinkedin size={16} />
+            </a>
+          </div>
+        </div>
+        <span className="font-sans normal-case tracking-normal text-ivory/55 text-[13px]">
+          Built quietly. On purpose by{" "}
+          <a href="https://www.instagram.com/pushbrandingstudio?igsh=MW5sdHo0dDJuMmhhdQ==" target="_blank" rel="noopener noreferrer" className="underline hover:text-ivory transition-colors">
+            POSH Branding Studio
+          </a>
         </span>
       </div>
     </div>

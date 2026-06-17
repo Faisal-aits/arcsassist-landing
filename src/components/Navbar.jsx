@@ -27,10 +27,22 @@ export const Navbar = () => {
         <a
           href="#top"
           data-testid="nav-logo"
-          className="flex items-baseline gap-2 font-display text-2xl md:text-[26px] tracking-tight text-ink leading-none"
+          className="flex items-center leading-none"
           aria-label="arcs — home"
         >
-          <span>arcs</span>
+          <div className="flex items-center gap-3">
+            <img
+              src="/arcs-tb.png"
+              alt="arcs"
+              className="h-12 md:h-16 w-auto object-contain scale-[1.5] origin-left"
+              style={{ mixBlendMode: "darken" }}
+            />
+            <div className="flex flex-col justify-center leading-none tracking-widest text-[9px] md:text-[11px] uppercase text-ink/80 mt-1">
+              <span>ar</span>
+              <span>consultancy</span>
+              <span>services</span>
+            </div>
+          </div>
         </a>
 
         <ul className="hidden md:flex items-center gap-8 lg:gap-10">

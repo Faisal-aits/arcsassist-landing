@@ -13,13 +13,13 @@ export const Proof = () => (
           <div className="flex items-center gap-3 mb-6">
             <span className="eyebrow text-navy/60">why <span className="lowercase">arcs</span></span>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl tracking-[-0.015em] leading-[1.08] text-navy">
+          <h2 className="font-sans normal-case text-3xl sm:text-4xl md:text-5xl tracking-[-0.015em] leading-[1.08] text-navy">
             The difference between <span className="pull-word">found</span> and{" "}
             <span className="pull-word">placed.</span>
           </h2>
         </div>
         <p className="md:col-span-5 self-end text-base md:text-[17px] text-navy/70 leading-relaxed">
-          most recruitment firms find candidates. we build them. that is the difference between a
+          Most recruitment firms find candidates. We build them. That is the difference between a
           quick placement and a real career.
         </p>
       </div>

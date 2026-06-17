@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>arcs · about</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+  :root {
+    --navy: #0A2540;
+    --ivory: #F7F5F0;
+    --ink: #1A1A1A;
+    --muted: #6B6B6B;
+    --gold: #C9A34E;
+    --rule: #D9D9D9;
+    --font-display: 'Lora', 'Richmond', Georgia, serif;
+    --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --pad-x: clamp(20px, 5vw, 80px);
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: var(--font-body);
+    color: var(--ink);
+    background: var(--ivory);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .about {
+    padding: 140px var(--pad-x);
+    background: var(--ivory);
+  }
+  .about-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 100px;
+    align-items: start;
+  }
+
+  .about-left .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    margin-bottom: 32px;
+    font-weight: 500;
+  }
+  .about-left .eyebrow .gold { color: var(--gold); }
+
+  .about-title {
+    font-family: var(--font-display);
+    font-size: clamp(36px, 4.5vw, 56px);
+    line-height: 1.05;
+    color: var(--navy);
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+    font-weight: 500;
+  }
+  .about-title em {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  .about-parent {
+    font-size: 13px;
+    color: var(--muted);
+    font-style: italic;
+    letter-spacing: 0.01em;
+  }
+
+  .about-right p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--ink);
+    opacity: 0.88;
+    max-width: 540px;
+  }
+  .about-right p.closer {
+    font-size: 18px;
+    color: var(--navy);
+    opacity: 1;
+    font-weight: 500;
+  }
+
+  .rule {
+    width: 40px;
+    height: 1px;
+    background: var(--navy);
+    margin: 32px 0;
+    opacity: 0.4;
+  }
+
+  /* Scroll reveals */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal[data-delay="1"] { transition-delay: 0.1s; }
+  .reveal[data-delay="2"] { transition-delay: 0.2s; }
+  .reveal[data-delay="3"] { transition-delay: 0.3s; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      transition-duration: 0.01ms !important;
+    }
+    .reveal { opacity: 1; transform: none; }
+  }
+
+  @media (max-width: 800px) {
+    .about { padding: 80px var(--pad-x); }
+    .about-inner {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<section class="about">
+  <div class="about-inner">
+    <div class="about-left">
+      <div class="eyebrow reveal"><span class="gold">●</span> about arcs</div>
+      <h2 class="about-title reveal" data-delay="1">
+        built <em>quietly.</em><br/>
+        built <em>on purpose.</em>
+      </h2>
+      <div class="about-parent reveal" data-delay="2">an AR Group company.</div>
+    </div>
+
+    <div class="about-right">
+      <p class="reveal">
+        we started arcs because the gap between ambition and a real job is often not about talent. it is about who you know, where you grew up, and whether anyone in your life has done the work before you.
+      </p>
+      <div class="rule reveal" data-delay="1"></div>
+      <p class="reveal" data-delay="1">
+        we are a small team, working from maharashtra, helping ambitious people who do not always have the shortcuts other candidates have. freshers building their first careers. employers who want good people without the metro markup.
+      </p>
+      <div class="rule reveal" data-delay="2"></div>
+      <p class="closer reveal" data-delay="2">
+        we will not be the loudest consultancy you have heard of. we are trying to be the most honest.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+  reveals.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

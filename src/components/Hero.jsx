@@ -13,7 +13,7 @@ const fadeUp = {
 
 const Headline = ({ parts, theme }) => (
   <h1
-    className={`font-display tracking-[-0.015em] leading-[1.02] text-[2.25rem] sm:text-[2.75rem] md:text-[3.25rem] lg:text-[3.75rem] ${
+    className={`font-sans normal-case tracking-[-0.015em] leading-[1.02] text-[2.25rem] sm:text-[2.75rem] md:text-[3.25rem] lg:text-[3.75rem] ${
       theme === "dark" ? "text-ivory" : "text-ink"
     }`}
   >
@@ -49,13 +49,15 @@ const Side = ({ data, theme, testidPrefix, index }) => {
 
       <motion.div variants={fadeUp} custom={1} className="my-12 md:my-0 max-w-xl">
         <Headline parts={data.headline} theme={theme} />
-        <p
-          className={`mt-7 md:mt-9 text-[15px] md:text-[16px] leading-relaxed max-w-md ${
-            dark ? "text-ivory/72" : "text-ink/72"
-          }`}
-        >
-          {data.sub}
-        </p>
+        {data.sub && (
+          <p
+            className={`mt-7 md:mt-9 text-[15px] md:text-[16px] leading-relaxed max-w-md ${
+              dark ? "text-ivory/72" : "text-ink/72"
+            }`}
+          >
+            {data.sub}
+          </p>
+        )}
       </motion.div>
 
       <motion.div variants={fadeUp} custom={2} className="flex flex-col gap-5">
@@ -70,7 +72,7 @@ const Side = ({ data, theme, testidPrefix, index }) => {
               : "bg-navy text-ivory border-navy hover:bg-transparent hover:text-navy"
           }`}
         >
-          <span className="lowercase font-medium">{data.cta}</span>
+          <span className="font-medium">{data.cta}</span>
           <ArrowRight
             size={16}
             strokeWidth={1.5}
@@ -83,7 +85,7 @@ const Side = ({ data, theme, testidPrefix, index }) => {
           }`}
         >
           <span className="h-1 w-1 rounded-full bg-gold" />
-          via whatsapp · usually replies within 4 hrs
+          via whatsapp
         </span>
       </motion.div>
 
@@ -100,10 +102,10 @@ const Side = ({ data, theme, testidPrefix, index }) => {
 };
 
 const TICKER_ITEMS = [
-  { id: "01", text: "100+ candidates coached" },
-  { id: "02", text: "90-day replacement" },
-  { id: "03", text: "1/5th metro agency cost" },
-  { id: "04", text: "tier 3 & 4 india focus" },
+  { id: "01", text: "100% Support" },
+  { id: "02", text: "45 to 90 Days Placement" },
+  { id: "03", text: "Cost Effective" },
+  { id: "04", text: "Transparent opportunities" },
 ];
 
 export const Hero = () => (
@@ -116,7 +118,7 @@ export const Hero = () => (
         aria-hidden
         className="hidden md:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-10 items-center justify-center pointer-events-none"
       >
-        <div className="flex overflow-hidden rounded-full border-2 border-gold shadow-[0_0_0_5px_rgba(197,163,88,0.25)] whitespace-nowrap font-display text-[11px] tracking-[0.25em] uppercase">
+        <div className="flex overflow-hidden rounded-full border-2 border-gold shadow-[0_0_0_5px_rgba(197,163,88,0.25)] whitespace-nowrap font-display text-[11px] tracking-[0.25em] lowercase">
           <span className="bg-navy text-ivory px-5 py-2">assist</span>
           <span className="bg-ivory text-navy px-5 py-2">right</span>
         </div>
@@ -154,7 +156,6 @@ export const Hero = () => (
     <div className="bg-ivory border-b border-rule">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex flex-wrap items-center justify-between gap-3 text-[11px] tracking-[0.2em] text-ink/50">
         <span>arcsassist.in</span>
-        <span className="hidden md:inline">an AR group company</span>
         <span>rooted in maharashtra · 2026</span>
       </div>
     </div>

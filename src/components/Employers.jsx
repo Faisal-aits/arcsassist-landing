@@ -18,14 +18,14 @@ export const Employers = () => (
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[-0.015em] leading-[1.05] text-ink"
+          className="font-sans normal-case text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[-0.015em] leading-[1.05] text-ink"
         >
           You are tired of <span className="pull-word">metro agency</span> rates. We are tired of{" "}
           <span className="pull-word">metro agency</span> output.
         </motion.h2>
         <p className="mt-10 text-[17px] md:text-lg text-ink/70 leading-relaxed max-w-2xl">
-          we work with small and growing companies in tier 2 and tier 3 india who want good people
-          without paying premium recruitment fees. our candidates arrive coached, vetted, and ready
+          We work with small and growing companies in tier 2 and tier 3 india who want good people
+          without paying premium recruitment fees. Our candidates arrive coached, vetted, and ready
           to interview — not raw resumes passed through a queue.
         </p>
         <a
@@ -35,7 +35,7 @@ export const Employers = () => (
           rel="noopener noreferrer"
           className="group mt-12 inline-flex items-center gap-4 pl-8 pr-6 py-4 bg-navy text-ivory text-[13px] tracking-[0.08em] border border-navy hover:bg-transparent hover:text-navy transition-all duration-500 shadow-xl shadow-navy/5"
         >
-          <span className="lowercase font-medium">talk to us about hiring</span>
+          <span className="font-medium">Talk to us about hiring</span>
           <ArrowRight size={18} strokeWidth={1.5} className="text-gold group-hover:translate-x-1.5 transition-transform" />
         </a>
       </div>

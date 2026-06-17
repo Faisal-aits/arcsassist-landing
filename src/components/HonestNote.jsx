@@ -15,15 +15,15 @@ export const HonestNote = () => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[-0.015em] leading-[1.08] text-ink"
+        className="font-sans normal-case text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[-0.015em] leading-[1.08] text-ink"
       >
         A note on what we <span className="pull-word">don&apos;t</span> do.
       </motion.h2>
       <p className="mt-8 md:mt-12 text-[17px] md:text-lg text-ink/70 leading-relaxed max-w-2xl">
-        arcs is built for jobs. we are not, right now, a career guidance service, an overseas
-        education consultancy, or a business setup firm — even though those are part of the longer
-        plan. we are starting with the vertical we can do well. the others arrive when we can do
-        each one properly. if that is what you need today, we will tell you so on the first call,
+        arcs is built for jobs. We are not, right now, a career guidance service, an overseas
+        education consultancy, or a business setup firm even though those are part of the longer
+        plan. We are starting with the vertical we can do well. The others arrive when we can do
+        each one properly. If that is what you need today, we will tell you so on the first call,
         and point you elsewhere if we have to.
       </p>
 
@@ -35,9 +35,8 @@ export const HonestNote = () => (
         ].map((it, i) => (
           <div
             key={it.k}
-            className={`py-8 px-1 md:px-8 border-b border-rule ${
-              i < 2 ? "md:border-r md:border-rule" : ""
-            }`}
+            className={`py-8 px-1 md:px-8 border-b border-rule ${i < 2 ? "md:border-r md:border-rule" : ""
+              }`}
           >
             <div className="flex items-center gap-2 mb-3">
               <span className="text-[10px] tracking-[0.22em] uppercase text-ink/40">{it.k}</span>

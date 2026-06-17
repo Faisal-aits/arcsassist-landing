@@ -13,14 +13,14 @@ export const HowItWorks = () => (
           <div className="flex items-center gap-3 mb-6">
             <span className="eyebrow text-ink/55">how it works</span>
           </div>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl tracking-[-0.015em] leading-[1.08] text-ink max-w-xl">
+          <h2 className="font-sans normal-case text-3xl sm:text-4xl md:text-5xl tracking-[-0.015em] leading-[1.08] text-ink max-w-xl">
             Three steps. <span className="pull-word">No theatre.</span>
           </h2>
         </div>
         <p className="text-sm text-ink/55 max-w-xs md:text-right leading-relaxed">
-          a deliberate, human process — not a funnel.
+          A deliberate, human process — not a funnel.
           <br />
-          <span className="font-display italic text-ink/40">approx. 3 weeks · per candidate</span>
+          <span className="font-display italic text-ink/40">4 to 6 weeks · per candidate</span>
         </p>
       </div>
 

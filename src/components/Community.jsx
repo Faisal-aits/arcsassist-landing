@@ -21,12 +21,12 @@ export const Community = () => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.08] tracking-[-0.015em]"
+        className="font-sans normal-case text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.08] tracking-[-0.015em]"
       >
-        One whatsapp group. <span className="pull-word">Real roles.</span> Real coaching.
+        One whatsapp group. <span className="pull-word">Real roles.</span> Real opportunities.
       </motion.h2>
       <p className="mt-8 max-w-2xl mx-auto text-base md:text-[17px] text-ivory/72 leading-relaxed">
-        join 100+ candidates being actively matched to openings. no spam. no group floods. just the
+        Join 100+ candidates being actively matched to openings. No spam. No group floods. Just the
         matches that fit you, with a real human handling the introduction.
       </p>
       <a
@@ -36,7 +36,7 @@ export const Community = () => (
         rel="noopener noreferrer"
         className="group mt-10 inline-flex items-center gap-3 pl-7 pr-6 py-4 bg-ivory text-navy text-[13px] tracking-[0.06em] border border-ivory hover:bg-transparent hover:text-ivory transition-all duration-300"
       >
-        <span className="lowercase font-medium">join the community</span>
+        <span className="font-medium">Join the community</span>
         <ArrowRight size={16} strokeWidth={1.5} className="text-gold group-hover:translate-x-1 transition-transform" />
       </a>
 

@@ -1,10 +1,11 @@
 import "./App.css";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
-import { Position } from "./components/Position";
+import { AboutUs } from "./components/AboutUs";
 import { HowItWorks } from "./components/HowItWorks";
 import { Proof } from "./components/Proof";
 import { Employers } from "./components/Employers";
+import { Partners } from "./components/Partners";
 import { Community } from "./components/Community";
 import { HonestNote } from "./components/HonestNote";
 import { Footer } from "./components/Footer";
@@ -15,10 +16,11 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <Position />
+        <AboutUs />
+        <Employers />
         <HowItWorks />
         <Proof />
-        <Employers />
+        <Partners />
         <Community />
         <HonestNote />
       </main>
