@@ -8,10 +8,16 @@
   --color-rule: rgba(28, 28, 28, 0.1);
   --color-mist: #f0f2f5;
   --font-display: "Georgia", serif;
+  --font-sans: "Georgia", serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   @apply bg-ivory text-ink antialiased;
+  font-family: var(--font-sans);
   margin: 0;
 }
 

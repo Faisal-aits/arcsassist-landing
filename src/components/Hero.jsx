@@ -118,7 +118,10 @@ export const Hero = () => (
         aria-hidden
         className="hidden md:flex absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-10 items-center justify-center pointer-events-none"
       >
-        <div className="flex overflow-hidden rounded-full border-2 border-gold shadow-[0_0_0_5px_rgba(197,163,88,0.25)] whitespace-nowrap font-display text-[11px] tracking-[0.25em] lowercase">
+        <div 
+          className="flex overflow-hidden rounded-full border-2 border-gold shadow-[0_0_0_5px_rgba(197,163,88,0.25)] whitespace-nowrap text-[11px] tracking-[0.25em] lowercase"
+          style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
+        >
           <span className="bg-navy text-ivory px-5 py-2">assist</span>
           <span className="bg-ivory text-navy px-5 py-2">right</span>
         </div>

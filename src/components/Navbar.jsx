@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { NAV_LINKS, WA_CANDIDATE } from "../data/content";
+import navLogo from "../assets/website navbar.png";
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -17,11 +18,10 @@ export const Navbar = () => {
   return (
     <header
       data-testid="navbar"
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-ivory/85 backdrop-blur-xl border-b border-rule"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled
+        ? "bg-ivory/85 backdrop-blur-xl border-b border-rule"
+        : "bg-transparent"
+        }`}
     >
       <nav className="max-w-7xl mx-auto px-6 md:px-12 h-16 md:h-20 flex items-center justify-between">
         <a
@@ -30,18 +30,12 @@ export const Navbar = () => {
           className="flex items-center leading-none"
           aria-label="arcs — home"
         >
-          <div className="flex items-center gap-3">
+          <div className="flex items-center">
             <img
-              src="/arcs-tb.png"
+              src={navLogo}
               alt="arcs"
-              className="h-12 md:h-16 w-auto object-contain scale-[1.5] origin-left"
-              style={{ mixBlendMode: "darken" }}
+              className="h-16 md:h-20 w-auto object-contain scale-[2] md:scale-[2.5] origin-left"
             />
-            <div className="flex flex-col justify-center leading-none tracking-widest text-[9px] md:text-[11px] uppercase text-ink/80 mt-1">
-              <span>ar</span>
-              <span>consultancy</span>
-              <span>services</span>
-            </div>
           </div>
         </a>
 
@@ -97,9 +91,8 @@ export const Navbar = () => {
       {/* Mobile drawer */}
       <div
         data-testid="nav-mobile-panel"
-        className={`md:hidden overflow-hidden transition-[max-height,opacity] duration-300 ease-out bg-ivory border-b border-rule ${
-          open ? "max-h-[420px] opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`md:hidden overflow-hidden transition-[max-height,opacity] duration-300 ease-out bg-ivory border-b border-rule ${open ? "max-h-[420px] opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <div className="px-6 py-6 flex flex-col gap-5">
           {NAV_LINKS.map((l) => (

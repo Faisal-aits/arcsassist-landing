@@ -9,6 +9,7 @@ import { Partners } from "./components/Partners";
 import { Community } from "./components/Community";
 import { HonestNote } from "./components/HonestNote";
 import { Footer } from "./components/Footer";
+import { Position } from "./components/Position";
 
 function App() {
   return (
@@ -17,10 +18,11 @@ function App() {
       <main>
         <Hero />
         <AboutUs />
-        <Employers />
+        <Position />
         <HowItWorks />
         <Proof />
         <Partners />
+        <Employers />
         <Community />
         <HonestNote />
       </main>

@@ -10,6 +10,7 @@ import {
   LINKEDIN,
   INSTAGRAM,
 } from "../data/content";
+import footerLogo from "../assets/arcs full website.png";
 
 const Col = ({ title, index, items }) => (
   <div>
@@ -65,20 +66,18 @@ export const Footer = () => (
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
         <div className="md:col-span-5">
-          <div className="flex items-end gap-5 relative right-[70px]">
+          <div className="flex items-end -ml-8 md:-ml-20">
             <a
               href="#top"
               className="flex items-center leading-none inline-block"
               aria-label="arcs — home"
             >
               <img
-                src="/arcs-tb.png"
+                src={footerLogo}
                 alt="arcs"
-                className="h-14 md:h-20 w-auto object-contain scale-[1.7] origin-left invert"
-                style={{ mixBlendMode: "screen" }}
+                className="h-20 md:h-32 w-auto object-contain scale-[2] md:scale-[2.5] origin-left brightness-0 invert"
               />
             </a>
-            <p className="font-display italic text-ivory/65 text-xl pb-2">assist right</p>
           </div>
           <p className="mt-6 text-[15px] text-ivory/65 leading-relaxed max-w-sm">
             A recruitment consultancy built for the india that talent maps still scroll past.
@@ -125,9 +124,9 @@ export const Footer = () => (
           </div>
         </div>
         <span className="font-sans normal-case tracking-normal text-ivory/55 text-[13px]">
-          Built quietly. On purpose by{" "}
+          Built quietly. On Purpose by{" "}
           <a href="https://www.instagram.com/pushbrandingstudio?igsh=MW5sdHo0dDJuMmhhdQ==" target="_blank" rel="noopener noreferrer" className="underline hover:text-ivory transition-colors">
-            POSH Branding Studio
+            PUSH Branding Studio
           </a>
         </span>
       </div>
